@@ -4,5 +4,5 @@ var MIMEType=prompt("The MIME Type")
 if(Base64!=null&&MIMEType!=null){
 var url="data:"+MIMEType+";base64,"+Base64;
   document.write("<a href='"+url+"'>"+url+"</a>")
-  location.href=url
+  window.open(url)
 }else{alert("Error!")}
