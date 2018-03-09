@@ -1,6 +1,6 @@
 <script>
 function GetDownloadURL(text){
-const data = new Blob(text,{type:"video/3gpp"});
+const data = new Blob(text,{type:"*/*"});
 return window.URL.createObjectURL(data);
 }
 </script>
